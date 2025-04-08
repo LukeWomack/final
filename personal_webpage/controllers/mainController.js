@@ -1,5 +1,5 @@
-exports.home = (req, res) => res.sender('home');
-exports.projects = (req, res) => res.sender('projects');
-exports.skills = (req, res) => res.sender('skills');
-exports.education = (req, res) => res.sender('education');
-exports.contact = (req, res) => res.sender('contact');
+exports.home = (req, res) => res.render('home');
+exports.projects = (req, res) => res.render('projects');
+exports.skills = (req, res) => res.render('skills');
+exports.education = (req, res) => res.render('education');
+exports.contact = (req, res) => res.render('contact');
