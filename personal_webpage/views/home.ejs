@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luke Womack | Portfolio</title>
-  <link href="public/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-light font-['Inter'] text-sage-dark">
-  <nav class="bg-white shadow-md">
-    <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
-      <div class="text-2xl font-bold text-sage-medium mb-4 md:mb-0">
-        John<span class="text-sage-dark">Doe</span>
-      </div>
-      <ul class="flex space-x-6">
-        <li><a href="/" class="text-sage-dark font-medium hover:text-sage-medium-dark border-b-2 border-medium">Home</a></li>
-        <li><a href="/projects" class="text-sage-dark hover:text-sage-medium-dark hover:border-b-2 hover:border-medium">Projects</a></li>
-        <li><a href="/education" class="text-sage-dark hover:text-sage-medium-dark hover:border-b-2 hover:border-medium">Education</a></li>
-        <li><a href="/skills" class="text-sage-dark hover:text-sage-medium-dark hover:border-b-2 hover:border-medium">Skills</a></li>
-        <li><a href="/contact" class="text-sage-dark hover:text-sage-medium-dark hover:border-b-2 hover:border-medium">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<%- include('partials/header') %>
 
   <!-- Main Content -->
   <main class="container mx-auto px-4 py-12">
@@ -89,26 +65,4 @@
     </div>
   </main>
 
-  <footer class="bg-dark text-white py-8 mt-12">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-4 md:mb-0">
-          <div class="text-xl font-bold">Luke<span class="text-sage-medium-light">Womack</span></div>
-          <div class="text-light mt-1">© 2025 All Rights Reserved</div>
-        </div>
-        <div class="flex space-x-6">
-          <a href="https://github.com/LukeWomack" target="_blank" rel="noopener" class="text-light hover:text-white">
-            <i class="fab fa-github text-xl"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/luke-womack-26285a2a2/" target="_blank" rel="noopener" class="text-light hover:text-white">
-            <i class="fab fa-linkedin text-xl"></i>
-          </a>
-          <a href="mailto:lukeawomack13@gmail.com" class="text-light hover:text-white">
-            <i class="fas fa-envelope text-xl"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+<%- include('partials/footer') %>
